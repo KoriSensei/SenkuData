@@ -5,7 +5,7 @@ int ENB = 11;  // ENB conectada al pin 11 / SIN EL JUMPER EN ENB
 int MO1 = 13;  // Input4 conectada al pin 13
 int MO2 = 7;  // Input3 conectada al pin 7
 int MO3 = 8;  // Input4 conectada al pin 8
-int M04= 12;  // Input3 conectada al pin 12
+int MO4= 12;  // Input3 conectada al pin 12
 L298N Senku(MO1,MO2,MO3,MO4,ENA,ENB)    //Pines descritos de izquierda a derecha en el L298N excluyendo ENA
 
 #include <NewPing.h> // Codigo No Operativo Bajo Revisión
@@ -15,7 +15,7 @@ NewPing sonar_R(3,4,50); // trigger 3 y echo al pin 4, distancia máxima limitad
 void setup() {
 pinMode(ENA, OUTPUT);  // ENA                                                    
 pinMode(ENB, OUTPUT);  // ENB
-pinMode(M01, OUTPUT);  // Input13
+pinMode(MO1, OUTPUT);  // Input13
 pinMode(MO2, OUTPUT);  // Input7
 pinMode(MO3, OUTPUT);  // Input8
 pinMode(MO4, OUTPUT);  // Input12
